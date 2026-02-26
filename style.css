@@ -1,0 +1,102 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-VariableFont_wght.ttf');
+}
+
+body {
+    margin: 0;
+    color: rgb(67, 67, 67);
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.main-container {
+    margin: 30px;
+    width: 80dvw;
+}
+
+.red {    
+    color: rgba(225, 30, 38);    
+}
+
+input {
+    width: 160px;
+    border: 1px solid rgba(67, 67, 67, 0.7);
+    box-sizing: border-box;
+    padding: 3px;
+    margin-top: 3px;
+}
+
+input:valid {
+    color: green;
+}
+
+input:invalid {
+    color: rgb(225, 30, 38);
+    padding: 3px;
+}
+
+input:focus {
+    border: 1px solid rgb(67, 67, 67);
+    box-sizing: border-box;
+    outline: none;
+}
+
+label {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(225, 30, 38);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 1.5px 3px 1.5px 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(189, 25, 30);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: rgb(67, 67, 67);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 60px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 37, 41);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.logo {
+    filter: invert(100%);
+    width: 36px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    filter: invert(50%);
+}
+
+.mail {
+    font-size: 14px !important;
+}
