@@ -33,11 +33,11 @@ function calculate() {
 
 
 /**
- * Calculates the minimum number of euro banknotes/coins needed to exactly pay the entered amount using the available denominations stored in the global 'units' array. Mutates the global variable 'neededAmount'.
+ * Calculates the minimum number of euro banknotes/coins needed to exactly pay the entered amount using the available denominations stored in the global 'units' array. Stores the 'inputValue' and mutates the global variable 'neededAmount'.
  * 
  * - Reads the numeric value from the input field with the ID 'number-input', converts it to a number, and assigns it to the global variable 'inputValue'.
  * - Assigns the 'inputValue' to the 'currentValue' variable and the global array 'units' to the array 'currentUnits'.
- * - Iteratively determines the largest usable denomination from the (remaining) 'currentUnits'.
+ * - Finds out the the maximum value from the 'currentUnits' array and assigns it to the 'maxUnit' variable.
  * - Adds the maximum possible number of that denomination to the global variable 'neededAmount' using division and Math.floor.
  * - Updates the remaining amount using the modulo operator and assigns it to the 'currentValue'.
  * - Filters the available denominations to those less than or equal to the 'currentValue' and assigns it to the 'currentUnits'.
